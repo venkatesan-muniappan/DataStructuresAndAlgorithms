@@ -2,7 +2,7 @@
 
 This is the test repository created to practice Data structures and Algorithms concepts. In this repository we will be solving practice problems from the below topics.
 
-##DataStructures:
+## DataStructures:
 * Arrays
 * Linked List
 * Stack
@@ -11,7 +11,7 @@ This is the test repository created to practice Data structures and Algorithms c
 * Heap
 * Binary Search Tree
 
-##Algorithms:
+## Algorithms:
 1. Sorting
   * Bubble Sort
   * Selection Sort

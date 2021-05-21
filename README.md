@@ -1,6 +1,6 @@
 # DataStructuresAndAlgorithms
 
-This is the test repository created to practice Data structures and Algorithms concepts. In this repository we will be solving practice problems from the below topics.
+This is a test repository created to practice Data structures and Algorithms concepts. In this repository I will be solving practice problems from the below topics.
 
 ## DataStructures:
 * Arrays

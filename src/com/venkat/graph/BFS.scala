@@ -1,4 +1,4 @@
-package main.scala.com.venkat.graph
+package com.venkat.graph
 
 import scala.collection.mutable
 

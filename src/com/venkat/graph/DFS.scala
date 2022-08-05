@@ -1,4 +1,4 @@
-package main.scala.com.venkat.graph
+package com.venkat.graph
 
 /**
  * Traversing a given graph using Depth First Search traversal mechanism.

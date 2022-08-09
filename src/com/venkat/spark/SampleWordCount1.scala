@@ -1,7 +1,7 @@
 package com.venkat.spark
 
 object SampleWordCount1 {
-  def main(args: Array[String]) = {
+  def main(args: Array[String]): Unit = {
     //    val txt =
     //      """
     //        |This is a test
@@ -22,7 +22,7 @@ object SampleWordCount1 {
     val kvRDD = strRDD.flatMap(_.split(" ")).filter(word => word.length > 3).map(word => (cleanWord(word), 1))
     println(s"kvRDD is ${kvRDD.collect().mkString(",")}")
 
-    val kvRDD2 = kvRDD.reduceByKey(_ + _).sortBy(_._2, false)
+    val kvRDD2 = kvRDD.reduceByKey(_ + _).sortBy(_._2, ascending = false)
     //    println(s"The result of word count is ${kvRDD2.collect.mkString("|")}")
     println(s"The result of word count is ")
     kvRDD2.coalesce(1).saveAsTextFile("C:\\Users\\mvenk\\OneDrive\\Desktop\\MyFiles\\Projects\\Texts\\tortoise_hare_output.txt")

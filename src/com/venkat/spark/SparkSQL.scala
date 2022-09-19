@@ -29,7 +29,6 @@ object SparkSQL extends App {
   println(s"another_names rdd is ${namesRDD.collect().mkString("|")}")
   val name_schema = StructType(List(StructField("Name", StringType), StructField("Wife", StringType)))
   val another_names_df = spark.createDataFrame(namesRDD, name_schema)
-
   println(s"Another names RDD is ")
   another_names_df.show(false)
 
